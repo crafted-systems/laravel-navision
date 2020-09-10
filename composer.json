@@ -1,0 +1,36 @@
+{
+    "name": "crafted-systems/laravel-navision",
+    "type": "library",
+    "description": "Fetch Records from Navision using Laravel",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Vincent Mosoti",
+            "email": "vincent@crafted.co.ke"
+        }
+    ],
+    "require": {
+        "php": "^7.2.0",
+        "laravel/framework": "^7.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "CraftedSystems\\LaravelNavision\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        },
+        "laravel": {
+            "providers": [
+                "CraftedSystems\\LaravelNavision\\LaravelNavisionServiceProvider"
+            ]
+        }
+    }
+}
